@@ -32,3 +32,7 @@ HEADERS += \
 
 FORMS += \
         principal.ui
+
+DISTFILES += \
+    lexico.l \
+    sintactico.y
