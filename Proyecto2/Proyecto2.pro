@@ -34,5 +34,6 @@ FORMS += \
         principal.ui
 
 DISTFILES += \
-    lexico.l \
-    sintactico.y
+    ctlexico.l \
+    ctsintactico.y \
+    cilexico.l
