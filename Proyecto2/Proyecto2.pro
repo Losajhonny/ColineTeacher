@@ -25,10 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        principal.cpp
+        principal.cpp \
+    nodoexp.cpp
 
 HEADERS += \
-        principal.h
+        principal.h \
+    nodoexp.h \
+    constante.h
 
 FORMS += \
         principal.ui
