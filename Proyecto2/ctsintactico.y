@@ -65,3 +65,70 @@ void yyerror(char *s);
 %token pr_insertar
 %token pr_obtener
 %token pr_buscar
+%token pr_pila
+%token pr_apilar
+%token pr_desapilar
+%token pr_cola
+%token pr_encolar
+%token pr_desencolar
+%token pr_mostraredd
+%token pr_leerteclado
+
+%token pr_concatenar
+%token pr_convertiracadena
+%token pr_convertiraentero
+
+%token entero
+%token decimal
+%token caracter
+%token cadena
+%token id
+
+%left mas menos
+%left por div
+%precedence neg
+%right pot
+%left masmas menmen
+
+%left menor mayor menorigual mayorigual igualigual diferente
+
+%left or
+%left and
+%right not
+
+%start S
+
+%%
+
+S:      EXP;
+
+EXP:    EXP mas EXP
+    |   EXP menos EXP
+    |   EXP por EXP
+    |   EXP div EXP
+    |   EXP pot EXP
+    |   EXP masmas
+    |   EXP menmen
+    |   menos EXP %prec neg
+    |   EXP mayor EXP
+    |   EXP menor EXP
+    |   EXP menorigual EXP
+    |   EXP mayorigual EXP
+    |   EXP igualigual EXP
+    |   EXP diferente EXP
+    |   EXP or EXP
+    |   EXP and EXP
+    |   not EXP
+    |   pari EXP pard
+    |   entero
+    |   decimal
+    |   caracter
+    |   cadena
+    |   id
+    ;
+
+%%
+
+void yyerror(char *s){
+    printf ("Error Sintactico %s \n", s);
+}
