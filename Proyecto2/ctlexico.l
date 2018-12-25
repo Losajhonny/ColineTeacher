@@ -17,7 +17,7 @@ CARACTER    ['][^\n\'][']
 CADENA      ["][^\n\"]+["]
 ID          [A-Za-z][A-Za-z0-9]+
 COMMENTMUL  [/][*].*[*][/]
-COMMENTUNI [/][/].*[\n\r]
+COMMENTUNI  [/][/].*[\n\r]
 
 %%
 
