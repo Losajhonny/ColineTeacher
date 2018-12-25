@@ -69,7 +69,7 @@ COMMENTUNI  [/][/].*[\n\r]
 "nada"      {return pr_nada;}
 "imprimir"  {return pr_imprimir;}
 "clase"     {return pr_clase;}
-"publico"   {return pr_public;}
+"publico"   {return pr_publico;}
 "protegido" {return pr_protegido;}
 "privado"   {return pr_privado;}
 "vacio"     {return pr_vacio;}
